@@ -8,26 +8,39 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="slider_container">
-        <input type="radio" name="radiobutton" id="slide1" checked>
-        <input type="radio" name="radiobutton" id="slide2">
-        <input type="radio" name="radiobutton" id="slide3">
-        <input type="radio" name="radiobutton" id="slide4">
-        
-        <div class="slides">
-            <div class="slide slide1"></div>
-            <div class="slide slide2"></div>
-            <div class="slide slide3"></div>
-            <div class="slide slide4"></div>
+    <div class="page_wrapper">
+		
+		<div class="slider" >
+					
+            <input checked type="radio" name="slider" id="slide1">
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+			<div class="slides">
+				<div class="border_slide">
+					<div class="images">
+                        <div><img src="/cssMemSlider/assets/cat.jpg"></div>
+                        <div><img src="/cssMemSlider/assets/choko.jpg"></div>
+                        <div><img src="/cssMemSlider/assets/harold.jpg"></div>
+                        <div><img src="/cssMemSlider/assets/sand.jpg"></div>
+					</div>
+				</div>
+			</div>
+                <div class="labels">
+                    <p>slide1</p>
+                    <p>slide2</p>
+                    <p>slide3</p>
+                    <p>slide4</p>
+                </div>
+                <div class="dots">
+                  <label for="slide1"></label>
+                  <label for="slide2"></label>
+                  <label for="slide3"></label>
+                 <label for="slide4"></label>
+                                        
+                 </div>
   
-        </div>	
-        <div class="slider_controls">
-            <label for="slide1">label 1</label>
-            <label for="slide2">label 2</label>
-            <label for="slide3">label 3</label>
-            <label for="slide4">label 4</label>
         </div>
-    </div>
-    
+	</div>
 </body>
 </html>
