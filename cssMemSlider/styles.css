@@ -1,3 +1,5 @@
+
+
 body{
 	margin: 0;
 	padding: 0;
@@ -27,7 +29,7 @@ margin-top: 5%;
 	line-height: 0;
 }
 
-.border_slide{ /*hide pictures*/
+.border_slide{
 	width: 100%;
 	overflow: hidden;
 }
@@ -57,36 +59,51 @@ label, input{
 
 #slide4:checked ~ .slides .images{
 	margin-left: -300%;
-}
-
+}  
+ 
 
 input{
 	display: none;
 }
 
-
-.dots label{ 
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.wrapper .dots label{ 
 	display: inline-block; 
 	width: 20px;
 	height: 20px;
     border-radius: 50%; 
     border: 15px solid #303030;
-	background: rgb(153, 142, 142);
+	background: rgb(225, 231, 171);
  
   
 }
+.dots{
+	display: flex;
+}
 .labels {
     color: #fff;
-    display: inline-block;
-}
-.dots{
-    display: inline-block;
+   
+   
     
 }
 
-.slides .images{ 
-	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+.slide_label{
+    font-size: 30px;
+    
+    
 }
+
+
+.slides .images{ 
+	transition: all 700ms ease-in-out;
+}
+
+
 
 
 .dots{ 
@@ -94,21 +111,73 @@ input{
 }
 
 .dots label:hover{ 
-	background: hsl(219, 87%, 42%);
+	background: #fdec01;
     border: 15px solid #303030;
 	border-color: #303030 !important;
 }
 
 
-#slide1:checked ~ .dots label:nth-child(1),
-#slide2:checked ~ .dots label:nth-child(2),
-#slide3:checked ~ .dots label:nth-child(3),
-#slide4:checked ~ .dots label:nth-child(4){
-	background: #18a3dd;
+#slide1:checked ~ .wrapper .dots label:nth-child(1),
+#slide2:checked ~ .wrapper .dots label:nth-child(2),
+#slide3:checked ~ .wrapper .dots label:nth-child(3),
+#slide4:checked ~ .wrapper .dots label:nth-child(4){
+	background: #b37b04;
 	border-color: #303030 !important;
     border: 15px solid #303030;
+}
+ 
+
+
+/*/////////////////////////////////////////////////*/
+
+
+.slides_labels { 
+	text-align: left;
 }
 
 
 
 
+
+.slides_labels span{ 
+	width: 25%;
+	float: left;
+}
+
+.slides_labels .labels{ 
+	width: 400%;
+	
+}
+
+.border_slide_labels{
+	width: 100%;
+	overflow: hidden;
+}
+
+span{
+	width: 100%;
+
+}
+
+
+#slide1:checked ~ .labels{
+	margin-left: 0;
+}
+
+#slide2:checked ~  .labels{
+	margin-left: -100%;
+}
+
+#slide3:checked ~  .labels{
+	margin-left: -200%;
+}
+
+#slide4:checked ~  .labels{
+	margin-left: -300%;
+} 
+
+
+
+.labels{ 
+	transition: all 700ms ease-in-out;
+}
