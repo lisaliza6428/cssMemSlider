@@ -84,6 +84,7 @@ input{
 }
 .dots{
 	display: flex;
+	margin-left: 30px;
 }
 .labels {
     color: #fff;
@@ -123,12 +124,17 @@ input{
 #slide4:checked ~ .wrapper .dots label:nth-child(4){
 	background: #b37b04;
 	border-color: #303030 !important;
-    border: 15px solid #303030;
+   
 }
  
 
 
 /*/////////////////////////////////////////////////*/
+
+
+.wrapper_slides_labels{
+max-width: 800px;
+}
 
 
 .slides_labels { 
@@ -181,3 +187,75 @@ span{
 .labels{ 
 	transition: all 700ms ease-in-out;
 }
+
+
+
+.slide_label{
+    font-size: 30px;
+    
+    
+}
+
+@media (max-width: 1100px) {
+	.slide_label{
+		font-size: 24px;
+	}
+	.wrapper_slides_labels{
+		max-width: 600px;
+		}
+		
+}
+
+
+@media (max-width: 700px) {
+	.slide_label{
+		font-size: 24px;
+	}
+	.wrapper_slides_labels{
+		max-width: 600px;
+		}
+
+	.wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 0;
+	
+	}
+	.dots{
+		order: -1;
+		margin-left: 0;
+		
+	}
+	.wrapper_slides_labels{
+		justify-self: flex-start;
+	}
+	
+
+
+		
+}
+
+
+@media (max-width: 500px) {
+	.slide_label{
+		font-size: 16px;
+	}
+	.wrapper_slides_labels{
+		max-width: 300px;
+		}
+
+		.wrapper .dots label{ 
+			width: 15px;
+			height: 15px;
+			border: 10px solid #303030;
+		}
+		.dots{
+			margin: 5px 0;
+			
+		}
+		
+}
+
+
+
