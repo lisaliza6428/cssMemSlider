@@ -228,7 +228,7 @@ span{
 		
 	}
 	.wrapper_slides_labels{
-		justify-self: flex-start;
+		margin-right: auto;
 	}
 	
 
@@ -243,6 +243,7 @@ span{
 	}
 	.wrapper_slides_labels{
 		max-width: 300px;
+		margin-right: auto;
 		}
 
 		.wrapper .dots label{ 
@@ -254,7 +255,9 @@ span{
 			margin: 5px 0;
 			
 		}
-		
+		.slider{
+		margin-top: 7%;
+		}
 }
 
 
